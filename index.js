@@ -1,3 +1,5 @@
+var GomixSocketWrapper = require('./gomixSocketWrapper');
+
 /* global AFRAME */
 
 if (typeof AFRAME === 'undefined') {
