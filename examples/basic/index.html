@@ -8,6 +8,25 @@
     <a-scene>
       <a-assets></a-assets>
       <a-entity gomix-socket=""></a-entity>
+
+      <!-- Podium. -->
+      <a-entity id="podium" geometry="primitive: box; depth: 0.9; height: 1.4; width: 0.9"
+                material="color: #A1583E" position="0 0.5 -1"></a-entity>
+      <!-- Chairs. -->
+      <a-entity template="src: #chairs" position="-5 0 -13"></a-entity>
+      <a-entity template="src: #chairs" position="1 0 -13"></a-entity>
+      <!-- Lights. -->
+      <a-entity light="type: ambient; color: #888"></a-entity>
+      <a-entity light="type: directional; intensity: 0.4" position="-1 1 0"></a-entity>
+      <!-- Ground. -->
+      <a-entity geometry="primitive: plane; height: 18; width: 15"
+                material="repeat: 10 10; src: #ground; width: 25"
+                rotation="-90 0 0" position="0 -0.1 -6"></a-entity>
+      <!-- Background. -->
+      <a-sky color="#A1DFFF"></a-sky>
+    </a-scene>
+      
+      
     </a-scene>
 
     <!-- GitHub Corner. -->
